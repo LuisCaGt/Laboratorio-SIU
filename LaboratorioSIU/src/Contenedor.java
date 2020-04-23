@@ -9,7 +9,7 @@
  * @author leelu
  */
 public class Contenedor extends javax.swing.JFrame {
-
+ private Carreras NuevaVentana;
     /**
      * Creates new form Contenedor
      */
@@ -52,7 +52,11 @@ public class Contenedor extends javax.swing.JFrame {
 
         jMenu1.setText("Mantenimiento");
 
+
         jMenuItem1.setText("Alumnos");
+
+        jMenuItem1.setText("M. Cursos");
+
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -90,6 +94,7 @@ public class Contenedor extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
 
         dispose();
@@ -100,6 +105,12 @@ public class Contenedor extends javax.swing.JFrame {
 
         nuevaVentana1 = new Mantenimiento_Alumnos();
         jDesktopPane1.add(nuevaVentana1);
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        NuevaVentana = new Carreras();
+        jDesktopPane1.add(NuevaVentana);
+
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
@@ -143,6 +154,8 @@ public class Contenedor extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+
     private javax.swing.JMenuItem jMenuItem2;
+
     // End of variables declaration//GEN-END:variables
 }
