@@ -10,3 +10,10 @@ email_Alumnos varchar(20) not null,
 estatus_Alumnos varchar(20) not null,
 primary key(carnet_Alumnos)
 ) engine=InnoDB;
+
+create table facultad(
+codigo_facultad varchar(5) primary key,
+nombre_facultad varchar(45),
+estado_facultad varchar(1)
+)
+engine=innodb;
