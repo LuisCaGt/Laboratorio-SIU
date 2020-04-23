@@ -1,6 +1,12 @@
 create database laboratoriosiu;
 use laboratoriosiu;
 
+create table carreras(
+codigo_carreras varchar(5) primary key not null,
+nombre_carreras varchar(45) not null,
+estatus_carreras varchar(1) not null
+)
+
 create table Alumnos(
 carnet_Alumnos int not null auto_increment,
 nombre_Alumnos varchar(45) not null,
@@ -17,3 +23,8 @@ nombre_facultad varchar(45),
 estado_facultad varchar(1)
 )
 engine=innodb;
+
+create table cursos(
+codigo_cursos varchar (5) primary key not null,
+nombre_curos varchar (45) not null,
+estatus_cursos varchar (1) not null)engine=InnoDB;
